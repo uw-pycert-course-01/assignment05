@@ -1,16 +1,5 @@
-.. _exercise_mailroom_part1:
-
-
 Mailroom
 ========
-
-
-**Overall Assignment Structure**
-
-This is the first in a multi-part exercise that will make use of your Python programming skills as you develop them during this course. You will start work on the program in this assignment, and then you will build on it in future lessons, as you learn more of Python's powerful features.
-
-This progressive work will give you a strong foundation for success in the final project, a Mailroom program using object-oriented structure, fully tested, and bundled up as a Python package.
-
 
 Overall Program Goal:
 ---------------------
@@ -48,7 +37,7 @@ Send a Thank You
 
 * Finally, use string formatting to compose an email thanking the donor for their generous donation. Print the email to the terminal and return to the original prompt.
 
-It is fine (for now) for the program not to store the names of the new donors that had been added, in other words, to forget new donors once the script quits running.
+It is fine for the program not to store the names of the new donors that had been added, in other words, to forget new donors once the script quits running.
 
 Create a Report
 -----------------
@@ -75,6 +64,7 @@ Your report should look something like this::
     Jeff Bezos                 $     877.33           1  $      877.33
     Paul Allen                 $     708.42           3  $      236.14
 
+
 Guidelines
 ----------
 
@@ -89,17 +79,7 @@ Of course, ``input()`` will be useful here.
 
 Put the functions you write into the script at the top.
 
-Put your main interaction into an ``if __name__ == '__main__'`` block.
-
-Finally, for Part 1 use only functions and the basic Python data types you've learned
-about so far in Lessons 1-3. There is no need to go any farther than that for this assignment.
-
 # For help getting started, read the following tutorial
-.. _exercise_mailroom_part1_tutorial:
-
-
-Mailroom Tutorial
-=================
 
 Controlling Main Program Flow
 -----------------------------
@@ -285,13 +265,4 @@ Then the custom function becomes really handy to sort on the last name:
             return student[0].split(" ")[1]
     >>> sorted(students, key=sort_key)
     [('Joe Acer', 26), ('Jimmy Lenovo', 40), ('Bob Mac', 39)]
-
-
-Note: you might see a lot of examples online using the ``lambda`` statement, it is valid and can be used but isn't preferred because the syntax isn't elegant or very readable:
-
-.. code-block:: python
-
-    sorted(students, key=lambda x: x[0].split(" ")[1], reverse=True)
-
-
 
