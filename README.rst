@@ -193,7 +193,6 @@ Choosing A Data Structure
 
 
 So far in this course, we have learned about strings, tuples, and lists. We will apply these data structures to hold our mailroom donor information.
-Choosing the right data structure is critical and our donor data structure will change in Parts 2 and 3 of this assignment as we learn about additional structures.
 
 What goes into this decision to use a specific data structure? Here are a couple of things to consider.
 
