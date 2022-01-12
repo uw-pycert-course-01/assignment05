@@ -13,7 +13,7 @@ let Python help you out of a jam and do your work for you.
 The Program:
 ------------
 
-Write a small command-line script called ``mailroom.py``. This script should be executable. The script should accomplish the following goals:
+Write an interactive script called ``mailroom.py``. This script should be executable. The script should accomplish the following goals:
 
 * It should have a data structure that holds a list of your donors and a
   history of the amounts they have donated. This structure should be populated
@@ -32,7 +32,7 @@ Send a Thank You
   * If the user types a name in the list, use it.
 * Once a name has been selected, prompt for a donation amount.
 
-  * Convert the amount into a number; it is OK at this point for the program to crash if someone types a bogus amount.
+  * Convert the amount into a number; Make sure to validate the user input!
   * Add that amount to the donation history of the selected user.
 
 * Finally, use string formatting to compose an email thanking the donor for their generous donation. Print the email to the terminal and return to the original prompt.
